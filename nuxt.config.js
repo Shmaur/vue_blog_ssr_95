@@ -1,3 +1,11 @@
+/*
+ * @Author: huangjin
+ * @Date: 2019-12-16 23:58:12
+ * @LastEditTime: 2019-12-17 00:10:29
+ * @LastEditors: huangjin
+ * @Description: 因为喜欢而坚持
+ * @生活不止眼前的苟且，还有诗和远方
+ */
 module.exports = {
   mode: 'universal',
   /*
@@ -35,7 +43,7 @@ module.exports = {
    */
   css: [
     'element-ui/lib/theme-chalk/index.css',
-    '@/assets/stylus/amin.styl'
+    '@/assets/stylus/main.styl'
   ],
   /*
    ** Plugins to load before mounting the App
