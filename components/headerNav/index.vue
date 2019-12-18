@@ -1,7 +1,7 @@
 <!--
  * @Author: huangjin
  * @Date: 2019-12-17 00:39:59
- * @LastEditTime: 2019-12-17 00:41:04
+ * @LastEditTime: 2019-12-18 00:41:28
  * @LastEditors: huangjin
  * @Description: 因为喜欢而坚持
  * @生活不止眼前的苟且，还有诗和远方
@@ -30,7 +30,7 @@ data() {
       navList: [{
         id:0,
         classify_name:"零壹院",
-        classify_router:""
+        classify_router:"about"
       },{
         id:1,
         classify_name:"论“色”院",

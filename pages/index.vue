@@ -1,7 +1,7 @@
 <!--
  * @Author: huangjin
  * @Date: 2019-12-16 23:58:12
- * @LastEditTime: 2019-12-17 00:48:43
+ * @LastEditTime: 2019-12-18 00:37:44
  * @LastEditors: huangjin
  * @Description: 因为喜欢而坚持
  * @生活不止眼前的苟且，还有诗和远方
@@ -10,6 +10,7 @@
   <div class="container">
     <div>
       <logo />
+      <nuxt-link :to="{name:'about'}">ABOUT</nuxt-link>
     </div>
   </div>
 </template>
@@ -26,6 +27,7 @@ export default {
 
 <style>
 .container {
+  margin-top: 60px;
   margin: 0 auto;
   min-height: 30vh;
   display: flex;
