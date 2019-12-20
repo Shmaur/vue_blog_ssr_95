@@ -1,7 +1,7 @@
 <!--
  * @Author: huangjin
  * @Date: 2019-12-18 00:34:48
- * @LastEditTime : 2019-12-19 00:37:17
+ * @LastEditTime : 2019-12-20 22:11:46
  * @LastEditors  : huangjin
  * @Description: 因为喜欢而坚持
  * @生活不止眼前的苟且，还有诗和远方
@@ -14,20 +14,16 @@
         <a href="/">Home</a>
       </li>
     </ul>
-    <h3>{{info.name}}</h3>
+    <h3>{{data}}</h3>
   </div>
 </template>
 
 <script>
-
-import axios from 'axios';
+import { getData } from '~/API/login'
 export default {
-  asyncData(){
-   return axios.get('https://api.myjson.com/bins/10f0bw').then(res=>{
-      console.log(res)
-    return {info:res.data}
-   })
-
+  async asyncData(){
+   let data = await getData()
+  return data
   }
 }
 </script>

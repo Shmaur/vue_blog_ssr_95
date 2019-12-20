@@ -8,3 +8,8 @@
  */
 const mysqlQuery = require('../index')
 console.log(mysqlQuery)
+
+let findUserData = (name) => {
+    let _sql = 'select * from user where user_login="${name}";'
+    return query(_sql)
+}

@@ -1,0 +1,100 @@
+.article_card_item
+  position relative
+  background #fff
+  margin 0 0 20px 0
+  padding 20px
+  box-shadow 5px 5px 10px 0 rgba(0, 0, 0, 0.05)
+  border-radius 10px
+  transition 0.35s
+  &:hover
+    color #ff312b !important
+    transform translate(-0.3%, -4%)
+    box-shadow 0 26px 40px -24px rgba(44, 9, 9, 0.2)
+  .article_infor_row
+    color #c2c2c2
+    font-size 14px
+    .article_infor_list_meta
+      display flex
+      align-items baseline
+      white-space nowrap
+      margin 0
+      padding 0
+      list-style none
+      .item
+        display flex
+        align-items baseline
+        &::after
+          content '-'
+          margin 0 0.4em
+          color #c2c2c2
+      .tag
+        line-height 22px
+        height 22px
+        margin-right 10px
+        width 50px
+        color #fff
+        background #00ca9b
+        text-align center
+        border-radius 5px
+      .browse
+        &::after
+          content ''
+  .article_header
+    display block
+    margin 15px 0 10px 0
+    color #555
+    &:hover
+      color #1d1818
+      cursor pointer
+    padding-right 220px
+    h2
+      font-size 18px
+      margin 0
+      white-space nowrap
+      overflow hidden
+      text-overflow ellipsis
+  .article_content
+    height 110px
+    overflow hidden
+    cursor pointer
+    // width: 65%;
+    color #999
+    &:hover
+      color #666
+    .article_content_text
+      margin 0
+      word-break break-word
+      pointer-events none
+      vertical-align baseline
+      text-overflow ellipsis
+      line-height 1.75
+      text-indent 2em
+      text-align justify
+      padding-right 220px
+      box-sizing border-box
+      letter-spacing 1.75px
+      display -webkit-box /* * 对象作为伸缩盒子模型显示 * */
+      -webkit-box-orient vertical /* * 设置或检索伸缩盒对象的子元素的排列方式 * */
+      -webkit-line-clamp 4 /* * 显示的行数 * */
+  .article_img
+    margin 0
+    position absolute
+    width 178px
+    height 178px
+    right 20px
+    top 20px
+    clear both
+    overflow hidden
+    border-radius 10px
+    transition-duration 0.5s
+    img
+      height 100%
+.article_null
+  width 100%
+  text-align center
+  color #c1c1c1
+  i
+    display inline-block
+    font-size 10em
+  span
+    display inherit

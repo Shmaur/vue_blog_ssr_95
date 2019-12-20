@@ -1,16 +1,17 @@
 /*
  * @Author: huangjin
- * @Date: 2019-12-19 00:39:04
- * @LastEditTime : 2019-12-20 22:07:16
+ * @Date: 2019-12-21 00:20:57
+ * @LastEditTime : 2019-12-21 00:22:36
  * @LastEditors  : huangjin
  * @Description: 因为喜欢而坚持
  * @生活不止眼前的苟且，还有诗和远方
  */
 import axios from './index'
 
-export const getData = () => {
+export const getArticleAll = (params) => {
   return axios.request({
-    url: '/login',
-    method: 'get'
+    url: '/getarticleList',
+    method: 'get',
+    params: params
   })
 }

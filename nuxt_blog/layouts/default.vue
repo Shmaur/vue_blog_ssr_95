@@ -1,15 +1,18 @@
 <!--
  * @Author: huangjin
  * @Date: 2019-12-16 23:58:12
- * @LastEditTime: 2019-12-17 00:47:09
- * @LastEditors: huangjin
+ * @LastEditTime : 2019-12-21 00:50:51
+ * @LastEditors  : huangjin
  * @Description: 因为喜欢而坚持
  * @生活不止眼前的苟且，还有诗和远方
  -->
 <template>
   <div>
     <headerNav></headerNav>
-    <nuxt />
+    <div class="content_wrapper">
+      <nuxt />
+    </div>
+
     <fooer></fooer>
   </div>
 </template>
@@ -74,6 +77,11 @@ html {
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
+}
+.content_wrapper {
+  max-width: 75rem;
+  margin: 0 auto;
+  margin-top: 60px;
 }
 </style>
 

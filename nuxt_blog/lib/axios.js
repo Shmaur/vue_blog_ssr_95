@@ -1,7 +1,7 @@
 /*
  * @Author: huangjin
  * @Date: 2019-06-26 20:18:42
- * @LastEditTime : 2019-12-19 00:15:13
+ * @LastEditTime : 2019-12-21 01:27:45
  * @LastEditors  : huangjin
  * @Description: 因为喜欢而坚持
  * @生活不止眼前的苟且，还有诗和远方
@@ -16,7 +16,8 @@ import baseURL from '../config/index'
 
 console.log(baseURL)
 
-// axios.defaults.baseURL = baseURL + '/v2/api'
+axios.defaults.baseURL = baseURL + '/v1/api'
+console.log(axios.defaults)
 class HttpRequeset {
   // constructor(baseUrl = baseURL) {
   //   this.baseUrl = baseUrl
@@ -42,6 +43,7 @@ class HttpRequeset {
 
     instance.interceptors.response.use(res => {
       let code = res.data.code
+      console.log(res)
       if (code === 200) {
         return res.data
       } else {

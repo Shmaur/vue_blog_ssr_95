@@ -1,7 +1,7 @@
 /*
  * @Author: huangjin
  * @Date: 2019-12-16 23:58:12
- * @LastEditTime : 2019-12-18 21:50:03
+ * @LastEditTime : 2019-12-20 20:44:00
  * @LastEditors  : huangjin
  * @Description: 因为喜欢而坚持
  * @生活不止眼前的苟且，还有诗和远方
@@ -13,9 +13,7 @@ const {
   Builder
 } = require('nuxt')
 const Router = require('koa-router')
-const MainRoutes = require('./routes/index')
 const app = new Koa()
-const router = new Router()
 // Import and Set Nuxt.js options
 const config = require('../nuxt.config.js')
 config.dev = app.env !== 'production'
