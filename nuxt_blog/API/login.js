@@ -10,7 +10,7 @@ import axios from './index'
 
 export const getData = () => {
   return axios.request({
-    url: '/login',
+    url: 'https://api.myjson.com/bins/1dgeh8',
     method: 'get'
   })
 }

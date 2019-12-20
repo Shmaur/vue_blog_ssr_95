@@ -14,17 +14,18 @@
         <a href="/">Home</a>
       </li>
     </ul>
-    <h3>{{info}}</h3>
+    <h3>{{info.name}}</h3>
   </div>
 </template>
 
 <script>
-import {getData} from '../../API/login';
+
+import axios from 'axios';
 export default {
   asyncData(){
-   return getData().then(res=>{
-     console.log(res)
-  return {info:res}
+   return axios.get('https://api.myjson.com/bins/10f0bw').then(res=>{
+      console.log(res)
+    return {info:res.data}
    })
 
   }

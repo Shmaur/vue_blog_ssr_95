@@ -16,15 +16,15 @@ import baseURL from '../config/index'
 
 console.log(baseURL)
 
-axios.defaults.baseURL = baseURL + '/v2/api'
+// axios.defaults.baseURL = baseURL + '/v2/api'
 class HttpRequeset {
-  constructor(baseUrl = baseURL) {
-    this.baseUrl = baseUrl
-    this.queue = {}
-  }
+  // constructor(baseUrl = baseURL) {
+  //   this.baseUrl = baseUrl
+  //   this.queue = {}
+  // }
   getInsideConfig() {
     const config = {
-      baseUrl: this.baseUrl,
+      // baseUrl: this.baseUrl,
       headers: {},
       timeout: 200000
     }
