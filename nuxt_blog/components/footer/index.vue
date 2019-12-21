@@ -1,11 +1,12 @@
 <!--
  * @Author: huangjin
  * @Date: 2019-12-17 00:31:34
- * @LastEditTime: 2019-12-17 00:42:28
- * @LastEditors: huangjin
+ * @LastEditTime : 2019-12-21 20:07:48
+ * @LastEditors  : huangjin
  * @Description: 因为喜欢而坚持
  * @生活不止眼前的苟且，还有诗和远方
  -->
+   <!--网页底部组建 -->
 <template>
   <footer class="footer">
     <div class="auth_signature">

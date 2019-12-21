@@ -1,0 +1,75 @@
+.synthesis_item
+  display flex
+  padding 0.375rem 0
+  transition 0.35s
+  cursor pointer
+  &:hover
+    transform translate(-0.3%, -4%)
+    box-shadow 0 26px 40px -24px rgba(44, 9, 9, 0.2)
+  .synthesis_item_left
+    flex 1
+    height 100%
+    .article_infor_list_meta
+      display flex
+      -webkit-box-align baseline
+      align-items baseline
+      white-space nowrap
+      margin 0
+      padding 0
+      color #c2c2c2
+      font-size 12px
+      line-height 1.25rem
+      list-style none
+      .iconfont
+        margin-right 6px
+        line-height 20px
+      .item
+        display flex
+        align-items baseline
+        &::after
+          content ''
+          margin 0 0.4em
+          line-height 20px
+      .tag
+        line-height 22px
+        height 22px
+        margin-right 10px
+        width 50px
+        color #fff
+        background #00ca9b
+        text-align center
+        border-radius 5px
+      .browse
+        &::after
+          content ''
+  .synthesis_item_title
+    width 14rem
+    margin 0
+    word-break break-word
+    white-space nowrap
+    pointer-events none
+    overflow hidden
+    font-size 16px
+    margin-top 0.375rem
+    color #555
+    font-weight 600
+    text-overflow ellipsis
+  .article_img
+    width 3.125rem
+    height 3.125rem
+    border-radius 5px
+    overflow hidden
+    margin-left 0.625rem
+    img
+      width auto
+      height auto
+      max-width 100%
+      max-height 100%
+.synthesis_item_null
+  text-align center
+  margin 20px 0
+  color #c2c2c2
+  .icon-wushuju
+    font-size 4rem
+  p
+    font-size 0.875rem

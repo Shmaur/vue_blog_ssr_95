@@ -1,14 +1,15 @@
 <!--
  * @Author: huangjin
  * @Date: 2019-12-21 01:15:16
- * @LastEditTime: 2019-12-21 01:15:32
- * @LastEditors: huangjin
+ * @LastEditTime : 2019-12-21 20:52:47
+ * @LastEditors  : huangjin
  * @Description: 因为喜欢而坚持
  * @生活不止眼前的苟且，还有诗和远方
- -->
+-->
+ <!--分页组建 -->
 <template>
   <div class="pagination">
-    <el-pagination @size-change="handleSizeChange" @current-change="handleCurrentChange" :current-page="searchData.currentPage" :page-size="searchData.pagesize" layout="prev, pager, next, jumper" :total="total">
+    <el-pagination @size-change="handleSizeChange" @current-change="handleCurrentChange" :page-size="8" layout="prev, pager, next, jumper" :total="total">
     </el-pagination>
   </div>
 </template>
@@ -16,13 +17,6 @@
 <script>
 export default {
   props: {
-    searchData: {
-      type: Object,
-      default() {
-        return {};
-      },
-      required: true
-    },
     total: {
       type: Number,
       default: 0
@@ -37,10 +31,10 @@ export default {
   },
   methods: {
     handleSizeChange(val) {
-      this.handleData();
+      this.handleData(val);
     },
     handleCurrentChange(val) {
-      this.handleData();
+      this.handleData(val);
     }
   }
 };
