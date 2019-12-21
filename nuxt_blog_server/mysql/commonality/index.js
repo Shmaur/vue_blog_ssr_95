@@ -1,7 +1,7 @@
 /*
  * @Author: huangjin
  * @Date: 2019-12-20 23:18:12
- * @LastEditTime : 2019-12-21 00:48:39
+ * @LastEditTime : 2019-12-21 22:40:24
  * @LastEditors  : huangjin
  * @Description: 因为喜欢而坚持
  * @生活不止眼前的苟且，还有诗和远方
@@ -11,7 +11,7 @@ const mysqlQuery = require('../index')
 console.log(mysqlQuery)
 // 公共查询所有函数
 let findTableAllData = (table) => {
-    let _sql = `select * from ${table};`
+    let _sql = `select *,date_format(Create_time,'%Y-%m-%d %H:%m:%s') as Create_time,date_format(Modify_time,'%Y-%m-%d %H:%m:%s') as Modify_time from ${table};`
     return mysqlQuery.query(_sql)
 }
 
