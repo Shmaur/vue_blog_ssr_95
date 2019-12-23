@@ -5,7 +5,7 @@
 ## 实现的功能
 - [ ]  登陆
 - [ ]  注册
-- [ ]  技术文章列表
+- [x]  技术文章列表
 - [ ]  设计文章列表
 - [ ]  读书文章列表
 - [ ]  文章搜索
@@ -15,7 +15,7 @@
 - [ ]  查看文章
 - [ ]  文章评论
 - [ ]  留言管理
-- [ ]  首页
+- [x]  首页
 - [ ]  标签
 - [ ]  软件共享
 
@@ -129,12 +129,7 @@ $ npm run dev
 # build for production and launch server
 $ npm run build
 $ npm run start
-# https://blog.csdn.net/weixin_30531261/article/details/80891360
-#https://www.cnblogs.com/jpfss/p/10063007.html
-#https://blog.csdn.net/hukun910903/article/details/79513203
-#https://blog.csdn.net/liao20081228/article/details/77185513
-#https://www.cnblogs.com/xq1314/p/8080598.html
-#https://blog.csdn.net/weiyuefei/article/details/76269790
+
 # generate static project
 $ npm run generate
 ```

@@ -1,78 +1,45 @@
+<!--
+ * @Author: huangjin
+ * @Date: 2019-12-21 01:49:28
+ * @LastEditTime: 2019-12-24 01:21:16
+ * @LastEditors: huangjin
+ * @Description: 因为喜欢而坚持
+ * @生活不止眼前的苟且，还有诗和远方
+ -->
 # 九五斋居\_shmaur 个人博客
 
 > 基于 Nuxt.js 服务器渲染(SSR)搭建的个人博客系统，使用 Vue 全家桶进行开发，自己设计并进行开发。开始入手开发
 
-# 设计图
 
-## 首页
-
-![首页](https://github.com/Shmaur/vue_blog_ssr_95/blob/master/design/home.jpg)
-
-## 文章列表
-
-![文章列表](https://github.com/Shmaur/vue_blog_ssr_95/blob/master/design/article.jpg)
-
-## 文章详情
-
-![文章详情](https://github.com/Shmaur/vue_blog_ssr_95/blob/master/design/article_info.png)
-
-## 留言
-
-![留言](https://github.com/Shmaur/vue_blog_ssr_95/blob/master/design/message.png)
-
-## 📁 目录结构
-
+## 📁 服务目录结构
 ```
-kite/
+nuxt_blog_server/
    |
-   ├──assets/                    * 静态资源如 LESS、SASS 或 JavaScript
+   ├──bin/                     * 程序启动入口
    |
-   ├──components/                *  Vue.js 组件
-   │   ├──build                  * vur ssr build 配置文件
-   │   ├──config                 * 部分配置文件
-   │   ├──public                 * index模版文件
-   │   ├──request                * 请求配置文件
-   │   ├──server                 * dev 模式下的开始文件
-   │   ├──src                    * src ssr 主文件目录
-   │   └──static                 * 静态资源目录
+   ├──config/                  * 通用配置
    │
-   │──layouts/                   * 布局组件
+   │──controllers/             * 路由控制器
    │
-   │──middleware/                * 中间件
+   │──lib/                     * 工具类
    |
-   ├──pages/                     * 路由及视图
+   ├──logs/                    * 日志
    │
-   ├──plugins/                   * 实例化之前需要运行的 Javascript 插件。
+   ├──mysql/                   * mysql 语句
    |
-   ├──static/                    * 静态文件 该目录下的文件会映射至应用的根路径 / 下
+   ├──public/                  * 静态文件，共享目录
    │
-   │──store/                     * 全局数据状态管理
+   │──router/                  * 路由入口
    │
-   │──test/                      * 测试
+   │──services/                * 路由服务
    │
-   │──server/                    * 服务端
+   │──app.js/                  * 入口
    │
-   │──package.json               * 包信息
+   │──package.json             * 包信息
    │
-   │──.babelrc                   * 解析器
+   │──.babelrc                 * 解析器
    │
-   │──.editorconfig              * 编辑器习惯
-   │
-   │──.gitignore                 * Git忽略文件配置
-   │
-   │──ava.config                 * ava 测试脚本配置
-   │
-   │──e2e.config                 * 代码规范配置
-   │
-   │──nuxt.config                * Nuxt.js的个性化配置
-   │
-   │──ava.config                 * ava 测试脚本配置
-   │
-   │──ava.config                 * ava 测试脚本配置
-   │
-   │──ava.config                 * ava 测试脚本配置
-   │
-   └──unit.config                * 基础配置
+   └──readme.md                * 说明文件
 
 ```
 
@@ -88,12 +55,7 @@ $ npm run dev
 # build for production and launch server
 $ npm run build
 $ npm run start
-# https://blog.csdn.net/weixin_30531261/article/details/80891360
-#https://www.cnblogs.com/jpfss/p/10063007.html
-#https://blog.csdn.net/hukun910903/article/details/79513203
-#https://blog.csdn.net/liao20081228/article/details/77185513
-#https://www.cnblogs.com/xq1314/p/8080598.html
-#https://blog.csdn.net/weiyuefei/article/details/76269790
+
 # generate static project
 $ npm run generate
 ```
