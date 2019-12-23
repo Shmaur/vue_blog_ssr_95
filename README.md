@@ -23,19 +23,19 @@
 
 ## 首页
 
-![首页](https://github.com/Shmaur/vue_blog_ssr_95/blob/master/design/home.jpg)
+![首页](https://github.com/Shmaur/vue_blog_ssr_95/tree/master/nuxt_blog/design/home.jpg)
 
 ## 文章列表
 
-![文章列表](https://github.com/Shmaur/vue_blog_ssr_95/blob/master/design/article.jpg)
+![文章列表](https://github.com/Shmaur/vue_blog_ssr_95/tree/master/nuxt_blog/design/article.jpg)
 
 ## 文章详情
 
-![文章详情](https://github.com/Shmaur/vue_blog_ssr_95/blob/master/design/article_info.png)
+![文章详情](https://github.com/Shmaur/vue_blog_ssr_95/tree/master/nuxt_blog/design/article_info.png)
 
 ## 留言
 
-![留言](https://github.com/Shmaur/vue_blog_ssr_95/blob/master/design/message.png)
+![留言](https://github.com/Shmaur/vue_blog_ssr_95/tree/master/nuxt_blog/design/message.png)
 
 ## 📁 前端目录结构
 
