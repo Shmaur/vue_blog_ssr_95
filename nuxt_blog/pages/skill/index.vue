@@ -1,7 +1,7 @@
 <!--
  * @Author: huangjin
  * @Date: 2019-12-16 23:58:12
- * @LastEditTime : 2019-12-23 19:58:03
+ * @LastEditTime : 2019-12-24 00:55:44
  * @LastEditors  : huangjin
  * @Description: 因为喜欢而坚持
  * @生活不止眼前的苟且，还有诗和远方
@@ -13,7 +13,8 @@
       <pagination :handleData="handleData" :total="totalCount"></pagination>
     </div>
     <div class="container_right">
-      <synthesisCard :synthesis="SynthesisData.data"></synthesisCard>
+      <typeCard></typeCard>
+      <synthesisCard :synthesis="SynthesisData.data" class="Synthesis_card_container"></synthesisCard>
       <tagCard :tag="tag.data"></tagCard>
     </div>
   </div>
@@ -23,6 +24,7 @@
 import articleList from '~/components/articleList'
 import synthesisCard from '~/components/synthesisCard'
 import tagCard from '~/components/tagCard'
+import typeCard from '~/components/typeCard'
 import pagination from '~/components/pagination'
 import { getArticleAll } from '~/API/home'
 import { getTag,getSynthesisData } from '~/API/commonality'
@@ -35,7 +37,8 @@ export default {
     articleList,
     pagination,
     synthesisCard,
-    tagCard
+    tagCard,
+    typeCard
   },
 
    async asyncData(){
@@ -72,4 +75,6 @@ methods: {
   .container_right
     width 20.625rem
     height 28.75rem
+    .Synthesis_card_container
+      margin-top 1.25rem
 </style>

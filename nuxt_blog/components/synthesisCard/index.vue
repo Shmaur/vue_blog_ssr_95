@@ -25,7 +25,7 @@
 
 <script>
 import articleCardSmall from '~/components/articleCardSmall'
-import { getSynthesisData } from '~/API/home'
+// import { getSynthesisData } from '~/API/home'
 export default {
   props:{
     synthesis:{
@@ -47,9 +47,9 @@ export default {
         currentPage:1,
         pagesize:30
       }
-   let data = await getSynthesisData(json)
-   let SynthesisData=data
-    return SynthesisData
+  //  let data = await getSynthesisData(json)
+  //  let SynthesisData=data
+  //   return SynthesisData
   },
 }
 </script>

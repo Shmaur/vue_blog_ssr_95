@@ -1,7 +1,7 @@
 <!--
  * @Author: huangjin
  * @Date: 2019-12-17 00:39:59
- * @LastEditTime : 2019-12-21 20:07:56
+ * @LastEditTime : 2019-12-23 20:04:16
  * @LastEditors  : huangjin
  * @Description: 因为喜欢而坚持
  * @生活不止眼前的苟且，还有诗和远方
@@ -31,31 +31,31 @@ data() {
       navList: [{
         id:0,
         classify_name:"零壹院",
-        classify_router:"about"
+        classify_router:"skill"
       },{
         id:1,
         classify_name:"论“色”院",
-        classify_router:""
+        classify_router:"design"
       },{
         id:2,
         classify_name:"观影院",
-        classify_router:""
+        classify_router:"photography"
       },{
         id:3,
         classify_name:"上客堂",
-        classify_router:""
+        classify_router:"leaveWord"
       },{
         id:4,
         classify_name:"斋居",
-        classify_router:""
+        classify_router:"reading"
       },{
         id:5,
         classify_name:"共享厅",
-        classify_router:""
+        classify_router:"share"
       },{
         id:6,
-        classify_name:"关于",
-        classify_router:"/about"
+        classify_name:"一刻时",
+        classify_router:"moment"
       },]
     }
 },
